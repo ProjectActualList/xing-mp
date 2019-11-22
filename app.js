@@ -7,7 +7,7 @@ App({
     const updateManager = wx.getUpdateManager()
     updateManager.onCheckForUpdate(function (res) {
       // 请求完新版本信息的回调
-      console.log(res.hasUpdate)
+      // console.log(res.hasUpdate)
     })
     updateManager.onUpdateReady(function () {
       wx.showModal({
@@ -32,6 +32,16 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    wx.login({
+      success(res) {
+        wx.request({
+          url: 'http://192.168.1.119:8080/login',
+          data: {
+            code: res.code
+          }
+        })
+      }
+    })
   },
   globalData: {
     userInfo: null
