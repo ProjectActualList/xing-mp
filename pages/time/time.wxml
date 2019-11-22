@@ -1,0 +1,47 @@
+<view class="cu-list menu {{menuBorder?'':'sm-border'}} {{menuCard?'':'card-menu margin-top'}}">
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-service lg text-red"></text>
+      <text class="text-grey">工作</text>
+    </view>
+     <view class="action">
+      <switch class="switch-time sm" bindchange="switchTime"></switch>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-repair lg  text-red"></text>
+      <text class="text-grey">健身</text>
+    </view>
+     <view class="action">
+      <switch class="switch-time sm" bindchange="switchTime"></switch>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-taxi text-red"></text>
+      <text class="text-grey">通勤</text>
+    </view>
+     <view class="action">
+      <switch class="switch-time sm" bindchange="switchTime"></switch>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-read text-red"></text>
+      <text class="text-grey">阅读</text>
+    </view>
+     <view class="action">
+      <switch class="switch-time sm" bindchange="switchTime"></switch>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-edit text-red"></text>
+      <text class="text-grey">学习</text>
+    </view>
+     <view class="action">
+      <switch class="switch-time sm" bindchange="switchTime"></switch>
+    </view>
+  </view>
+</view>

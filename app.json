@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/anki/anki",
+    "pages/time/time",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "奇特的时间",
+    "enablePullDownRefresh": true,
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "dark"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#B22222",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "pages/time/time",
+        "iconPath": "static/images/pie.png",
+        "selectedIconPath": "static/images/pie@selected.png",
+        "text": "Time"
+      },
+      {
+        "pagePath": "pages/anki/anki",
+        "iconPath": "static/images/ic_ranking.png",
+        "selectedIconPath": "static/images/ic_ranking@selected.png",
+        "text": "Anki"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/my.png",
+        "selectedIconPath": "static/images/my@selected.png",
+        "text": "My"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,14 @@
+.cu-item {
+  height: 90%;
+}
+.text-content {
+  margin-top: 10px;
+}
+.solids-bottom {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.text-right {
+  margin-top: 5px;
+  margin-left: -5px;
+}

@@ -1,0 +1,7 @@
+.switch-time::after {
+  content: "\e750";
+}
+
+.switch-time::before {
+  content: "\e7f6";
+}
