@@ -5,7 +5,8 @@
       <text class="text-grey">{{item.name}}</text>
     </view>
      <view class="action">
-      <switch class="switch-time sm" bindchange="switchTime" value="{{item.value}}" checked="{{item.checked}}" data-index="{{index}}"></switch>
+      <switch class="switch-time sm" bindchange="switchTime" value="{{item.value}}" 
+      checked="{{item.checked}}" data-index="{{index}}"></switch>
     </view>
   </view>
 </view>
