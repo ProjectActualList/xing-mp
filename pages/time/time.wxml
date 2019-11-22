@@ -1,11 +1,11 @@
 <view class="cu-list menu {{menuBorder?'':'sm-border'}} {{menuCard?'':'card-menu margin-top'}}">
-  <view class="cu-item {{menuArrow?'arrow':''}}" wx:for="{{list}}" wx:key="{{index}}">
+  <view class="cu-item {{menuArrow?'arrow':''}}" wx:for="{{recordList}}" wx:key="{{index}}">
     <view class="content">
       <text class="cuIcon-service lg text-red"></text>
       <text class="text-grey">{{item.name}}</text>
     </view>
      <view class="action">
-      <switch class="switch-time sm" bindchange="switchTime" value="{{item.value}}" 
+      <switch class="switch-time sm" bindchange="switchTime" value="{{item.categoryId}}" 
       checked="{{item.checked}}" data-index="{{index}}"></switch>
     </view>
   </view>

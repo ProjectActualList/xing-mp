@@ -28,18 +28,17 @@ App({
       })
       // 新版本下载失败
     })
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
     wx.login({
       success(res) {
-        wx.request({
-          url: 'http://192.168.1.119:8080/login',
-          data: {
-            code: res.code
+        util.request(api.AuthLogin, {
+          code: res.code
+        }).then(function (res) {
+          if (res.code === "000000") {
+            console.log(res.result)
+            wx.setStorageSync("userInfo", res.result)
           }
-        })
+          wx.hideLoading();
+        });
       }
     })
   },
